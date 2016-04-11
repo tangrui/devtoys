@@ -1,4 +1,4 @@
-require('babel-register')
+import 'source-map-support/register'
 
 global.__DEVELOPMENT__ = process.env.NODE_ENV !== 'production'
 
