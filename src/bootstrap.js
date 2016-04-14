@@ -1,4 +1,5 @@
 import 'source-map-support/register'
+import server from 'cinestrip/lib/server'
 
 global.__DEVELOPMENT__ = process.env.NODE_ENV !== 'production'
 
@@ -14,7 +15,7 @@ const bootstrap = () => {
     }
   }
 
-  require('cinestrip/lib/server')
+  server.start()
 }
 
 bootstrap()
